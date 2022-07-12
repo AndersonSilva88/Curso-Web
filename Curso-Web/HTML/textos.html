@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos Avançados</title>
+</head>
+<body>
+    <p>
+        Está página apresenta trechos de códigos de <strong>algoritmo</strong>
+    </p>
+    <p>
+        o nome da busca vem do inglês <em>binary search algoritm</em> 
+    </p>
+    <code>
+    <pre>
+        public static int buscaBinaria(int[] array, int valor) {
+            int inicio = 0;
+            int fim = array.length-1;
+            while(inicio <= fim) {
+                int meio = (inicio+fim)/2;
+                if(array[meio] == valor) {
+                    return meio;
+                }
+                if (valor > array[meio]) {
+                    inicio = meio+1;
+                } else {
+                    fim = meio - 1;
+                }
+            }
+            
+            return -1;
+        }
+    </pre> 
+    </code>
+    <p>
+        o algoritmo inicia criando as variáveis <var>inicio</var> e <var>fim</var>
+    </p>
+    <p>
+        fórmula do cálculo da hipotenusa é: a <sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> <br>
+        fómula da água é: H<sub>2</sub>0.
+    </p>
+
+</body>
+</html>
